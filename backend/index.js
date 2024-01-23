@@ -13,17 +13,23 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Middleware for parsing request body
-app.use(express.json());
 // Middleware for handling CORS Policy
 app.use(cors());
+// Middleware for parsing request body
+app.use(express.json());
+
 // Serve static files from the React build
-app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
+// app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Serve React app for any route
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
+// });
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
+// });
 
 app.get('/api', async (req, res) => {
   try {
@@ -32,6 +38,7 @@ app.get('/api', async (req, res) => {
         $in: [1, 2],
       },
     }).select('-_id');
+    console.log('someone made a call to the crashes endpoint');
     res.json(results);
   } catch (error) {
     console.error('Error connecting to the database:', error);
