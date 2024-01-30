@@ -21,15 +21,13 @@ app.use(express.json());
 // Serve static files from the React build
 // app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
-console.log(__dirname);
-
 // Serve React app for any route
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
 // });
-
+console.log(path.join(process.cwd(), '../frontend/dist/index.html'));
 app.get('/', (req, res) => {
-  const indexPath = path.join(process.cwd(), 'frontend/dist/index.html');
+  const indexPath = path.join(process.cwd(), '../frontend/dist/index.html');
   res.sendFile(indexPath);
 });
 
