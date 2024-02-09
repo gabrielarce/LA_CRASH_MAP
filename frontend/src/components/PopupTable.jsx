@@ -1,5 +1,3 @@
-import React from 'react';
-
 const dayOfWeek = (day) => {
   switch (Number(day)) {
     case 1:
