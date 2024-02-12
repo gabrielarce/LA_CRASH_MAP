@@ -44,6 +44,8 @@ function Modal({ crashes, filtered, setFiltered }) {
       <button
         className="bg-black text-white px-4 py-2 rounded hover:bg-slate-700 flex flex-col justify-center align-middle"
         onClick={openModal}
+        aria-label="Open filter Modal"
+        title="Open filter Modal"
       >
         Filter
         {filtered.length !== crashes.length ? <FcFilledFilter /> : <CiFilter />}

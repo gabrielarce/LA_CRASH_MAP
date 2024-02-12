@@ -35,6 +35,7 @@ const convertToAmPmTime = (militaryTime) => {
 };
 
 const PopupTable = ({ data }) => {
+  console.log(data);
   return (
     <div className="max-w-md mx-auto ">
       {/* Date */}
@@ -59,6 +60,30 @@ const PopupTable = ({ data }) => {
         <span className="text-lg font-normal ml-3">
           {' '}
           {dayOfWeek(data.day_of_week)}{' '}
+        </span>
+      </div>
+      {/* Alcohol Involved */}
+      <div className="my-1 flex justify-between">
+        <span className="text-lg font-semibold my-0">Alcohol Involved: </span>
+        <span className="text-lg font-normal ml-3">
+          {' '}
+          {data.alcohol_involved ? 'Yes' : 'No'}{' '}
+        </span>
+      </div>
+      {/* Pedestrian Accident */}
+      <div className="my-1 flex justify-between">
+        <span className="text-lg font-semibold my-0">Pedestrian: </span>
+        <span className="text-lg font-normal ml-3">
+          {' '}
+          {data.bicycle_accident ? 'Yes' : 'No'}{' '}
+        </span>
+      </div>
+      {/* Bicycle Accident */}
+      <div className="my-1 flex justify-between">
+        <span className="text-lg font-semibold my-0">Bicycle: </span>
+        <span className="text-lg font-normal ml-3">
+          {' '}
+          {data.bicycle_accident ? 'Yes' : 'No'}{' '}
         </span>
       </div>
       {/* Number Killed */}

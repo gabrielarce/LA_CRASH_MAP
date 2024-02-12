@@ -117,26 +117,6 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
             disabled={crashes.length === filtered.length ? false : true}
           />
         </div>
-        <div className="w-full sm:w-1/2 my-1">
-          <label htmlFor="day_of_week">Day of the Week:</label>
-          <select
-            name="day_of_week"
-            id="day_of_week"
-            value={formData.day_of_week}
-            onChange={handleChange}
-            disabled={crashes.length === filtered.length ? false : true}
-          >
-            <option value="">Select a day</option>
-            <option value="1">Monday</option>
-            <option value="2">Tuesday</option>
-            <option value="3">Wednesday</option>
-            <option value="4">Thursday</option>
-            <option value="5">Friday</option>
-            <option value="6">Saturday</option>
-            <option value="7">Sunday</option>
-          </select>
-        </div>
-
         {crashes.length === filtered.length ? (
           <button
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
