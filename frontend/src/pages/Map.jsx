@@ -39,14 +39,12 @@ function Map() {
   };
 
   const fatalIcon = new Icon({
-    iconUrl:
-      'https://www.freepnglogos.com/uploads/dot-png/file-red-dot-svg-wikimedia-commons-23.png',
+    iconUrl: '/red-dot.png',
     iconSize: [12, 12],
   });
 
   const severeIcon = new Icon({
-    iconUrl:
-      'https://www.freepnglogos.com/uploads/dot-png/blue-dot-clip-art-clkerm-vector-clip-art-online-20.png',
+    iconUrl: '/blue-dot.png',
     iconSize: [12, 12],
   });
 
