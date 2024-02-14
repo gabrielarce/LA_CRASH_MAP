@@ -67,8 +67,13 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
       <h2>Filter Data </h2>
       {/* Step 3: Render form elements */}
       <form className="" onSubmit={handleSubmit}>
-        <div className="w-full sm:w-1/2 my-1">
-          <label>Acohol Involved:</label>
+        <div className="flex items-center w-full my-1">
+          <label className="h-full">Alcohol </label>
+          <img
+            src="alcohol.svg"
+            alt="Icon"
+            className="inline-block h-full max-w-6 mr-2 ml-2"
+          />
           <input
             type="checkbox"
             name="alcohol_involved"
@@ -77,8 +82,14 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
             disabled={crashes.length === filtered.length ? false : true}
           />
         </div>
-        <div className="w-full sm:w-1/2 my-1">
-          <label>Bicycle Involved:</label>
+
+        <div className="flex items-center w-full my-1">
+          <label className="h-full">Bicycle </label>
+          <img
+            src="bicycle.svg"
+            alt="Icon"
+            className="inline-block h-full max-w-6 mr-2 ml-2"
+          />
           <input
             type="checkbox"
             name="bicycle_accident"
@@ -87,8 +98,13 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
             disabled={crashes.length === filtered.length ? false : true}
           />
         </div>
-        <div className="w-full sm:w-1/2 my-1">
-          <label>Motorcycle Involved:</label>
+        <div className="flex items-center w-full my-1">
+          <label className="h-full">Motorcycle </label>
+          <img
+            src="motorcycle.svg"
+            alt="Icon"
+            className="inline-block h-full max-w-6 mr-2 ml-2"
+          />
           <input
             type="checkbox"
             name="motorcycle_accident"
@@ -97,8 +113,13 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
             disabled={crashes.length === filtered.length ? false : true}
           />
         </div>
-        <div className="w-full sm:w-1/2 my-1">
-          <label>Pedestrian Involved:</label>
+        <div className="flex items-center w-full my-1">
+          <label>Pedestrian </label>
+          <img
+            src="pedestrian.svg"
+            alt="Icon"
+            className="inline-block h-full max-w-6 mr-2 ml-2"
+          />
           <input
             type="checkbox"
             name="pedestrian_accident"
@@ -107,8 +128,13 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
             disabled={crashes.length === filtered.length ? false : true}
           />
         </div>
-        <div className="w-full sm:w-1/2 my-1">
-          <label>Highways and Freeways:</label>
+        <div className="flex items-center w-full my-1">
+          <label>Highways and Freeways</label>
+          <img
+            src="freeway.svg"
+            alt="Icon"
+            className="inline-block h-full max-w-6 mr-2 ml-2"
+          />
           <input
             type="checkbox"
             name="state_hwy_ind"

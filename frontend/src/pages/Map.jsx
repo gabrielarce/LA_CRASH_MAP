@@ -17,7 +17,7 @@ function Map() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:9000/api')
+    fetch('https://cheerful-wasp-cloak.cyclic.app/api')
       .then((response) => response.json())
       .then((data) => {
         setCrashes(data);
