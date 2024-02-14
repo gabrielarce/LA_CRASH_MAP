@@ -75,7 +75,7 @@ const PopupTable = ({ data }) => {
         <span className="text-lg font-semibold my-0">Pedestrian: </span>
         <span className="text-lg font-normal ml-3">
           {' '}
-          {data.bicycle_accident ? 'Yes' : 'No'}{' '}
+          {data.pedestrian_accident ? 'Yes' : 'No'}{' '}
         </span>
       </div>
       {/* Bicycle Accident */}
