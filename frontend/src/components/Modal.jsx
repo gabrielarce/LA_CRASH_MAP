@@ -25,7 +25,7 @@ function Modal({ crashes, filtered, setFiltered }) {
       )}
       {/* Modal */}
       {isOpen && (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-80 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 rounded-lg p-6 z-1000">
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-950 text-gray-50 w-80 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 rounded-lg p-6 z-1000">
           <Filter
             crashes={crashes}
             setFiltered={setFiltered}

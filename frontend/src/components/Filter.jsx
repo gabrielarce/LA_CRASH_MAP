@@ -63,12 +63,12 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
   }, []);
 
   return (
-    <div className="">
-      <h2>Filter Data </h2>
+    <div className="text-snow">
+      <h2 className="text-xl">Filter Data </h2>
       {/* Step 3: Render form elements */}
-      <form className="" onSubmit={handleSubmit}>
+      <form className="my-4" onSubmit={handleSubmit}>
         <div className="flex items-center w-full my-1">
-          <label className="h-full">Alcohol </label>
+          <label className="h-full text-flame">Alcohol </label>
           <img
             src="alcohol.svg"
             alt="Icon"
@@ -84,7 +84,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
         </div>
 
         <div className="flex items-center w-full my-1">
-          <label className="h-full">Bicycle </label>
+          <label className="h-full text-asparagus">Bicycle </label>
           <img
             src="bicycle.svg"
             alt="Icon"
@@ -99,7 +99,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
           />
         </div>
         <div className="flex items-center w-full my-1">
-          <label className="h-full">Motorcycle </label>
+          <label className="h-full text-fawn">Motorcycle </label>
           <img
             src="motorcycle.svg"
             alt="Icon"
@@ -114,7 +114,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
           />
         </div>
         <div className="flex items-center w-full my-1">
-          <label>Pedestrian </label>
+          <label className="text-vanilla">Pedestrian </label>
           <img
             src="pedestrian.svg"
             alt="Icon"
@@ -129,7 +129,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
           />
         </div>
         <div className="flex items-center w-full my-1">
-          <label>Highways and Freeways</label>
+          <label className="text-coolGray">Highways and Freeways</label>
           <img
             src="freeway.svg"
             alt="Icon"
@@ -145,7 +145,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
         </div>
         {crashes.length === filtered.length ? (
           <button
-            className="bg-blue-500 text-white px-4 py-2 mr-4 rounded hover:bg-blue-600"
+            className="bg-orange-500 text-white px-3 py-2 mr-4 rounded hover:bg-orange-600"
             type="submit"
           >
             Apply Filter
@@ -154,7 +154,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
           false
         )}
         <button
-          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          className="bg-gray-500 hover:bg-gray-600 text-white px-3 py-2 rounded"
           type="button"
           onClick={resetForm}
         >
