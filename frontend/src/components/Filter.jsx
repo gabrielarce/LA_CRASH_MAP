@@ -145,7 +145,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
         </div>
         {crashes.length === filtered.length ? (
           <button
-            className="bg-orange-500 text-white px-3 py-2 mr-4 rounded hover:bg-orange-600"
+            className="bg-orange-500 text-white px-3 py-2 mr-4 mt-4 rounded hover:bg-orange-600"
             type="submit"
           >
             Apply Filter
@@ -154,7 +154,7 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
           false
         )}
         <button
-          className="bg-gray-500 hover:bg-gray-600 text-white px-3 py-2 rounded"
+          className="bg-gray-500 hover:bg-gray-600 text-white px-3 py-2 mt-4 rounded"
           type="button"
           onClick={resetForm}
         >

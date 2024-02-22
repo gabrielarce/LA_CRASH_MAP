@@ -72,7 +72,9 @@ const PopupTable = ({ data }) => {
       </div>
       {/* Pedestrian Accident */}
       <div className="my-1 flex justify-between">
-        <span className="text-lg font-semibold my-0">Pedestrian: </span>
+        <span className="text-lg font-semibold my-0">
+          Pedestrian Involved:{' '}
+        </span>
         <span className="text-lg font-normal ml-3">
           {' '}
           {data.pedestrian_accident ? 'Yes' : 'No'}{' '}
@@ -80,10 +82,20 @@ const PopupTable = ({ data }) => {
       </div>
       {/* Bicycle Accident */}
       <div className="my-1 flex justify-between">
-        <span className="text-lg font-semibold my-0">Bicycle: </span>
+        <span className="text-lg font-semibold my-0">Bicycle Involved: </span>
         <span className="text-lg font-normal ml-3">
           {' '}
           {data.bicycle_accident ? 'Yes' : 'No'}{' '}
+        </span>
+      </div>
+      {/* Bicycle Accident */}
+      <div className="my-1 flex justify-between">
+        <span className="text-lg font-semibold my-0">
+          Motorcycle Involved:{' '}
+        </span>
+        <span className="text-lg font-normal ml-3">
+          {' '}
+          {data.motorcycle_accident ? 'Yes' : 'No'}{' '}
         </span>
       </div>
       {/* Number Killed */}
