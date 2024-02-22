@@ -15,13 +15,13 @@ const About = () => {
           recorded in the county.
         </p>
         <p className="mb-6 text-xl">
-          This site's purpose is to allow users to visually see where severe car
-          crashes have occurred and to view information related to car accidents
-          in LA County, with the hope that individuals make informed decisions
-          that can help reduce and eliminate future car related fatalities.
+          This site's purpose is to allow users to see where severe car crashes
+          have occurred and to view information related to car accidents in LA
+          County, with the hope that individuals make informed decisions that
+          can help reduce and eliminate future car related fatalities.
         </p>
 
-        <h2 className="text-2xl font-bold mb-6">About the App</h2>
+        <h2 className="text-2xl font-bold mb-6 mt-8">The App</h2>
         <p className="mb-6 text-xl">
           The map displays car crashes based on data obtained through the
           California Highway Patrol agency. The map displays the data in
@@ -33,7 +33,7 @@ const About = () => {
           compare to each other.
         </p>
 
-        <h2 className="text-2xl font-bold mb-6">About the Data</h2>
+        <h2 className="text-2xl font-bold mb-6">The Data</h2>
         <p className="mb-6 text-xl">
           The Statewide Integrated Traffic Records System (SWITRS) is a database
           that serves as a means to collect and process data gathered from a
@@ -44,7 +44,7 @@ const About = () => {
           information possessed by State government.
         </p>
 
-        <h2 className="text-2xl font-bold mb-6">Limitations of the Data</h2>
+        <h2 className="text-2xl font-bold mb-6">Limitations</h2>
         <p className="mb-6 text-xl">
           Data is recorded by a law enforcement agent at the site of the crash,
           and sometimes human error is present and not all data fields are
