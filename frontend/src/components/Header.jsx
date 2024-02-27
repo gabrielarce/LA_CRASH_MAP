@@ -36,6 +36,7 @@ export default function Header() {
                 <Link
                   to="/about"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  onClick={() => setNavbarOpen(!navbarOpen)}
                 >
                   <span className="ml-2">About</span>
                 </Link>
@@ -44,6 +45,7 @@ export default function Header() {
                 <Link
                   to="/statistics"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  onClick={() => setNavbarOpen(!navbarOpen)}
                 >
                   <span className="ml-2">Statistics</span>
                 </Link>
@@ -52,8 +54,9 @@ export default function Header() {
                 <Link
                   to="/take-action"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  onClick={() => setNavbarOpen(!navbarOpen)}
                 >
-                  <span className="ml-2">Take Action</span>
+                  <span className="ml-2">Action</span>
                 </Link>
               </li>
             </ul>
