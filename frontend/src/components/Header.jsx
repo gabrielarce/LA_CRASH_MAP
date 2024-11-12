@@ -13,6 +13,7 @@ export default function Header() {
             <Link
               to="/"
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
               Los Angeles County Crash Map
             </Link>
@@ -52,7 +53,9 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/take-action"
+                  to="https://yesonhla.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   onClick={() => setNavbarOpen(!navbarOpen)}
                 >
