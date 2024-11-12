@@ -21,7 +21,7 @@ const About = () => {
           can help reduce and eliminate future car related fatalities.
         </p>
 
-        <h2 className="text-2xl font-bold mb-6 mt-8">The App</h2>
+        {/* <h2 className="text-2xl font-bold mb-6 mt-8">The App</h2>
         <p className="mb-6 text-lg">
           The map displays car crashes based on data obtained through the
           California Highway Patrol agency. The map displays the data in
@@ -50,7 +50,7 @@ const About = () => {
           and sometimes human error is present and not all data fields are
           completely recorded. Therefor, the map only displays points where a
           coordinate data (latitude, longitude) was properly recorded.
-        </p>
+        </p> */}
       </div>
     </main>
   );
