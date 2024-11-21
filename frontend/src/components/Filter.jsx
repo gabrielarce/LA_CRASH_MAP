@@ -41,18 +41,18 @@ function DataFilter({ crashes, filtered, setFiltered, closeModal }) {
     closeModal();
   };
 
-  // Add event handlers to update the state
-  const handleChange = (e) => {
-    const { name, type, checked, value } = e.target;
-    // Handle checkbox separately, as its value is 'checked' instead of 'value'
-    let newValue;
-    if (name === 'state_hwy_ind') {
-      newValue = checked ? 'Y' : '';
-    } else {
-      newValue = type === 'checkbox' ? checked : value;
-    }
-    updateFormData(name, newValue);
-  };
+  // // Add event handlers to update the state
+  // const handleChange = (e) => {
+  //   const { name, type, checked, value } = e.target;
+  //   // Handle checkbox separately, as its value is 'checked' instead of 'value'
+  //   let newValue;
+  //   if (name === 'state_hwy_ind') {
+  //     newValue = checked ? 'Y' : '';
+  //   } else {
+  //     newValue = type === 'checkbox' ? checked : value;
+  //   }
+  //   updateFormData(name, newValue);
+  // };
 
   // Load formData from localStorage when the component mounts
   useEffect(() => {
